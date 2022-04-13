@@ -3,7 +3,7 @@ import FilmCard from "../components/FilmCard";
 import axios from "axios";
 import {apiKey} from "../App";
 
-import {POPULAR_API} from "../Private";
+import {POPULAR_API} from "../App";
 
 const NowPlaying = () => {
     const [nowPlaying,setsNowPlaying] = useState([])
