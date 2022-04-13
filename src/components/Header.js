@@ -99,7 +99,6 @@ const Header = () => {
                     {/*</select>*/}
                     <div className='ml-6'>
                         <button
-                            onClick={()=>satLanguage("en-RUS")}
                         className="text-white">русский</button>
                         <button className="text-white mx-2">english</button>
 
