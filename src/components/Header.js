@@ -10,9 +10,7 @@ const Header = () => {
     const handleChange = (e)=> {
         setSearchTitle(e.target.value)
     }
-    const handleOption = (e)=>{
-        setOption(e.target.value)
-    }
+
     const navigate = useNavigate()
     const handleSearch = ()=> {
         navigate(`/movies/search-results/${searchTitle}`)
