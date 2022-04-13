@@ -1,7 +1,7 @@
 
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {apiKey} from "../Private";
+import {apiKey} from "../App";
 import {useParams} from "react-router-dom";
 import FilmCard from "../components/FilmCard";
 
