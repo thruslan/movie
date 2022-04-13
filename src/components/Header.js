@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 
 import {NavLink} from "react-router-dom";
 import {useNavigate} from "react-router-dom"
+import {LanguageContext} from "./context/LanguageContext";
 const Header = () => {
     const [searchTitle,setSearchTitle] = useState( "")
-    const [option,setOption] = useState("ru-RUS")
+    const {language,satLanguage} = useContext(LanguageContext)
+
     const handleChange = (e)=> {
         setSearchTitle(e.target.value)
     }
@@ -95,10 +97,17 @@ const Header = () => {
                                 Latest</NavLink>
                         </li>
                     </ul>
-                    <select name="" id="" onChange={handleChange} className="ml-3">
-                        <option value="ru-RUS" selected>Русский</option>
-                        <option value="en-US">English</option>
-                    </select>
+                    {/*<select name="" id="" onChange={handleChange} className="ml-3">*/}
+                    {/*    <option value="ru-RUS" selected>Русский</option>*/}
+                    {/*    <option value="en-US">English</option>*/}
+                    {/*</select>*/}
+                    <div className='ml-6'>
+                        <button
+                            onClick={()=>satLanguage("en-RUS")}
+                        className="text-white">русский</button>
+                        <button className="text-white mx-2">english</button>
+
+                    </div>
                 </div>
             </div>
         </nav>

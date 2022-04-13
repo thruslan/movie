@@ -9,7 +9,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <LanguageContext.Provider value={option}>
+        <App />
+    </LanguageContext.Provider>
 
   </BrowserRouter>,
   document.getElementById('root')
