@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {apiKey} from "../Private";
+import {apiKey} from "../App";
 import {useParams} from "react-router-dom";
 import ActorsPage from "./ActorsPage";
 import FilmTrailers from "../components/FilmTrailers";

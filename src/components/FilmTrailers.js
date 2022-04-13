@@ -1,6 +1,6 @@
 import React, {useEffect,useState} from 'react';
 import axios from "axios";
-import {apiKey} from "../Private";
+import {apiKey} from "../App";
 import YouTube from "react-youtube";
 
 const FilmTrailers = ({id}) => {

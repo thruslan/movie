@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from "axios";
-import {apiKey} from "../Private";
+import {apiKey} from "../App";
 
 import {POPULAR_API} from "../Private";
 import FilmCard from "../components/FilmCard";
