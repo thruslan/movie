@@ -3,7 +3,6 @@ import axios from "axios";
 import {apiKey} from "../App";
 import {useParams} from "react-router-dom";
 import Slider from "react-slick";
-import ActorCard from "../components/ActorCard";
 import FilmCard from "../components/FilmCard";
 
 const ActorBio = () => {

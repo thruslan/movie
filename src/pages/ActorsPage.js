@@ -2,7 +2,6 @@ import React, {useEffect,useState} from 'react';
 import axios from "axios";
 import {apiKey} from "../App";
 import {useParams} from "react-router-dom";
-import {data} from "autoprefixer";
 import Slider from "react-slick";
 import ActorCard from "../components/ActorCard";
 

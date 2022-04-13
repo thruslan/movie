@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react';
 import axios from "axios";
 import {apiKey} from "../App";
 
-import {POPULAR_API} from "../App";
 import FilmCard from "../components/FilmCard";
 const Popular = () => {
     const [popularMovie,setPopularMovie]=useState([])
@@ -11,9 +10,9 @@ const Popular = () => {
 
 
 
-    const handleChange = (e)=>{
-        setOption(e.target.value)
-    }
+    // const handleChange = (e)=>{
+    //     setOption(e.target.value)
+    // }
     const pages = []
     for (let i = 1;i<= 20; i++){
         pages.push(i)

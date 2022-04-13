@@ -1,11 +1,9 @@
-import React, {useContext, useState} from 'react';
+import React, { useState} from 'react';
 
 import {NavLink} from "react-router-dom";
 import {useNavigate} from "react-router-dom"
-import {LanguageContext} from "./context/LanguageContext";
 const Header = () => {
     const [searchTitle,setSearchTitle] = useState( "")
-    const {language,satLanguage} = useContext(LanguageContext)
 
     const handleChange = (e)=> {
         setSearchTitle(e.target.value)

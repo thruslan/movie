@@ -16,10 +16,8 @@ const MovieDetailsPage = () => {
     },[])
     console.log(movie)
     const {
-        poster_path,
         backdrop_path,
         title,
-        status,
         overview,
         runtime
 
